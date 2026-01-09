@@ -1,0 +1,38 @@
+{
+  "name": "universal-design-system",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "prepare": "husky",
+    "check": "pnpm run \"/check:/\"",
+    "check:types": "turbo run check:types",
+    "check:format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check:lint": "turbo run check:lint"
+  },
+  "devDependencies": {
+    "commitizen": "catalog:workspace",
+    "cz-git": "catalog:workspace",
+    "eslint": "catalog:workspace",
+    "husky": "catalog:workspace",
+    "lint-staged": "catalog:workspace",
+    "prettier": "^3.7.4",
+    "turbo": "^2.7.3",
+    "typescript": "5.9.2"
+  },
+  "packageManager": "pnpm@10.27.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,md}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+packages:
+  - apps/*
+  - packages/*
+
+catalogs:
+  workspace:
+    commitizen: 4.3.1
+    cz-git: 1.12.0
+    husky: 9.1.7
+    lint-staged: 16.2.7
+    eslint: 9.39.1
+    typescript: 5.9.2
+
+onlyBuiltDependencies:
+  - esbuild
