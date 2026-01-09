@@ -7,7 +7,7 @@
     "prepare": "husky",
     "check": "pnpm run \"/check:/\"",
     "check:types": "turbo run check:types",
-    "check:format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check:format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
     "check:lint": "turbo run check:lint"
   },
   "devDependencies": {
@@ -23,12 +23,6 @@
   "packageManager": "pnpm@10.27.0",
   "engines": {
     "node": ">=18"
-  },
-  "lint-staged": {
-    "**/*.{ts,tsx,md}": [
-      "eslint --fix",
-      "prettier --write"
-    ]
   },
   "config": {
     "commitizen": {
