@@ -20,12 +20,12 @@
   "devDependencies": {
     "@react-router/dev": "7.12.0",
     "@repo/eslint-config": "workspace:*",
-    "@tailwindcss/vite": "^4.1.13",
+    "@tailwindcss/vite": "catalog:design",
     "@types/node": "^22",
     "@types/react": "catalog:react",
     "@types/react-dom": "catalog:react",
     "eslint": "catalog:workspace",
-    "tailwindcss": "^4.1.13",
+    "tailwindcss": "catalog:design",
     "typescript": "catalog:workspace",
     "vite": "^7.1.7",
     "vite-tsconfig-paths": "^5.1.4"
