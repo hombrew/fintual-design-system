@@ -6,10 +6,18 @@ catalogs:
   workspace:
     commitizen: 4.3.1
     cz-git: 1.12.0
+    eslint: 9.39.1
     husky: 9.1.7
     lint-staged: 16.2.7
-    eslint: 9.39.1
     typescript: 5.9.2
+
+  react:
+    react: 19.1.0
+    react-dom: 19.1.0
+    "@types/react": ~19.1.0
+    "@types/react-dom": ~19.1.0
+
+nodeLinker: hoisted
 
 onlyBuiltDependencies:
   - esbuild

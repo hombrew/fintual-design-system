@@ -1,3 +1,13 @@
 [tools]
 node = "22.17.1"
 pnpm = "10.27.0"
+java = "openjdk-17.0.2"
+yq = "4.48.1"
+android-sdk = "19.0"
+
+[env]
+ANDROID_HOME = "{{env.HOME}}/.local/share/mise/installs/android-sdk/latest"
+_.path = [
+    "{{env.ANDROID_HOME}}/cmdline-tools",
+    "{{env.ANDROID_HOME}}/platform-tools",
+]
