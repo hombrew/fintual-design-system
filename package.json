@@ -8,7 +8,9 @@
     "check": "pnpm run \"/check:/\"",
     "check:types": "turbo run check:types",
     "check:format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
-    "check:lint": "turbo run check:lint"
+    "check:lint": "turbo run check:lint",
+    "clean": "turbo clean && rm -rf ./.turbo && rm -rf ./node_modules",
+    "ri": "pnpm run clean && pnpm i"
   },
   "devDependencies": {
     "commitizen": "catalog:workspace",

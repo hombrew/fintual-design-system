@@ -10,6 +10,8 @@ catalogs:
     husky: 9.1.7
     lint-staged: 16.2.7
     typescript: 5.9.2
+    tsdx: 2.0.0
+    bunchee: 6.4.0
 
   react:
     react: 19.1.0
@@ -20,6 +22,10 @@ catalogs:
   design:
     tailwindcss: 4.1.18
     "@tailwindcss/vite": 4.1.18
+
+  env:
+    "@types/node": 22.15.3
+    
 
 nodeLinker: hoisted
 

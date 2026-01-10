@@ -6,12 +6,14 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
+    "clean": "rm -rf .react-router && rm -rf .turbo && rm -rf build && rm -rf node_modules",
     "check:lint": "eslint . --max-warnings 0",
     "check:types": "react-router typegen && tsc"
   },
   "dependencies": {
     "@react-router/node": "7.12.0",
     "@react-router/serve": "7.12.0",
+    "@repo/typography": "workspace:*",
     "isbot": "^5.1.31",
     "react": "catalog:react",
     "react-dom": "catalog:react",
@@ -21,7 +23,7 @@
     "@react-router/dev": "7.12.0",
     "@repo/eslint-config": "workspace:*",
     "@tailwindcss/vite": "catalog:design",
-    "@types/node": "^22",
+    "@types/node": "catalog:env",
     "@types/react": "catalog:react",
     "@types/react-dom": "catalog:react",
     "eslint": "catalog:workspace",
