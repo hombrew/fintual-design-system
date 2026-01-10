@@ -1,9 +1,3 @@
-import type { ReactNode } from "react";
-
-export interface ThingProps {
-  children?: ReactNode;
+export function multiply(a: number, b: number): number {
+  return a * b;
 }
-
-export const Thing = ({ children }: ThingProps) => {
-  return <div>{children ?? "the snozzberries taste like snozzberries"}</div>;
-};
