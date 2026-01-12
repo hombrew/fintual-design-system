@@ -1,3 +1,4 @@
+import { ThemeSwitcher } from "@/component/theme-switcher";
 import { ScrollView, View } from "@repo/core";
 import { Typography } from "@repo/typography";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -9,6 +10,7 @@ export default function Text() {
         role="main"
         contentContainerClassName="flex p-6 native:pb-safe items-center justify-center"
       >
+        <ThemeSwitcher />
         <View className="native:pb-12 max-w-lg">
           <Typography variant="h1">The Rainbow Forest Adventure</Typography>
           <View className="p-1.5" />

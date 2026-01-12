@@ -1,5 +1,6 @@
 import { ScrollView, View } from "@repo/core";
 import { Typography } from "@repo/typography";
+import { ThemeSwitcher } from "~/components/theme-switcher";
 
 export function Welcome() {
   return (
@@ -7,6 +8,7 @@ export function Welcome() {
       role="main"
       contentContainerClassName="flex p-6 native:pb-safe items-center justify-center"
     >
+      <ThemeSwitcher />
       <View className="native:pb-12 max-w-lg">
         <Typography variant="h1">The Rainbow Forest Adventure</Typography>
         <View className="p-1.5" />
