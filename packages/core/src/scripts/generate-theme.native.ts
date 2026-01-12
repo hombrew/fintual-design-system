@@ -13,8 +13,22 @@ function generateTheme() {
     .join("\n");
 
   return `
-@import "./base.css";
+@import "tailwindcss";
+@import "tw-animate-css";
 @import "uniwind";
+
+@source "../**/*.{ts,tsx}";
+
+@theme {
+  --radius: 0.625rem;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --spacing-hairline: hairlineWidth();
+}
+
 
 @layer theme {
   :root {
@@ -30,7 +44,8 @@ ${dark}
 `;
 }
 
-fs.writeFileSync(
-  path.resolve(fileURLToPath(import.meta.url), "../../styles/theme.native.css"),
-  generateTheme(),
+const filePath = path.resolve(
+  fileURLToPath(import.meta.url),
+  "../../../lib/styles/theme.native.css",
 );
+fs.writeFileSync(filePath, generateTheme());

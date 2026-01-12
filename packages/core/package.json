@@ -12,9 +12,8 @@
       "default": "./lib/module/index.js"
     },
     "./package.json": "./package.json",
-    "./base.css": "./src/styles/base.css",
-    "./theme.css": "./src/styles/theme.css",
-    "./theme.native.css": "./src/styles/theme.native.css"
+    "./theme.css": "./lib/styles/theme.css",
+    "./theme.native.css": "./lib/styles/theme.native.css"
   },
   "files": [
     "src",
@@ -38,7 +37,7 @@
   "scripts": {
     "clean": "del-cli lib",
     "prepare": "pnpm run build",
-    "build": "pnpm run build:styles && bob build",
+    "build": "bob build && mkdir ./lib/styles && pnpm run build:styles",
     "build:styles": "pnpm run \"/build:styles:/\"",
     "build:styles:web": "node --experimental-strip-types ./src/scripts/generate-theme.ts",
     "build:styles:native": "node --experimental-strip-types ./src/scripts/generate-theme.native.ts",

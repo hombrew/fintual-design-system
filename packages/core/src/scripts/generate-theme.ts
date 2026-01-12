@@ -17,7 +17,20 @@ function generateTheme() {
     .join("\n");
 
   return `
-@import "./base.css";
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@source "../**/*.{ts,tsx}";
+
+@theme {
+  --radius: 0.625rem;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --spacing-hairline: hairlineWidth();
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -35,7 +48,8 @@ ${map}
 `;
 }
 
-fs.writeFileSync(
-  path.resolve(fileURLToPath(import.meta.url), "../../styles/theme.css"),
-  generateTheme(),
+const filePath = path.resolve(
+  fileURLToPath(import.meta.url),
+  "../../../lib/styles/theme.css",
 );
+fs.writeFileSync(filePath, generateTheme());

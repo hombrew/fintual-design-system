@@ -28,6 +28,9 @@ catalogs:
 
   env:
     "@types/node": 22.15.3
+
+  overrides:
+    react-native: "npm:react-native-web@~0.21.0"
     
 
 nodeLinker: hoisted
