@@ -1,7 +1,6 @@
 import type React from "react";
 import { createElement } from "react";
 
-// oxlint-disable-next-line no-explicit-any
 type AnyComponent = React.ComponentType<any>;
 
 function copyComponentProperties<C extends AnyComponent>(
