@@ -1,4 +1,7 @@
+
 @import "@repo/core/theme.css";
+@source "../node_modules/@repo/core/lib/**/*.{js}";
+@source "../node_modules/@repo/typography/lib/**/*.{js}";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,

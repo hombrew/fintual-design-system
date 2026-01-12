@@ -1,0 +1,28 @@
+diff --git a/dist/index.js b/dist/index.js
+index 928afddde5f183130f3ae5134330b4e14a8989d4..7bdcf3ecfe05b02bfbcc63524ef7dd1773ae8418 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -4,7 +4,7 @@ import { esbuildFlowPlugin, flowPlugin } from "@bunchtogether/vite-plugin-flow";
+ import commonjs from "vite-plugin-commonjs";
+ import { makeIdFiltersToMatchWithQuery } from "@rolldown/pluginutils";
+ import MagicString from "magic-string";
+-import react from "@vitejs/plugin-react";
++// import react from "@vitejs/plugin-react";
+ 
+ //#region src/transforms.ts
+ /**
+@@ -251,10 +251,10 @@ function rnw(opts = {}) {
+ 		},
+ 		commonjs(),
+ 		rnwPlugin,
+-		react({
+-			...opts,
+-			exclude
+-		})
++		// react({
++		// 	...opts,
++		// 	exclude
++		// })
+ 	];
+ }
+ 

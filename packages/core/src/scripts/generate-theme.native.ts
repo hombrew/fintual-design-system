@@ -17,8 +17,6 @@ function generateTheme() {
 @import "tw-animate-css";
 @import "uniwind";
 
-@source "../**/*.{ts,tsx}";
-
 @theme {
   --radius: 0.625rem;
   --radius-sm: calc(var(--radius) - 4px);

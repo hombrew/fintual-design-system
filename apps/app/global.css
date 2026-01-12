@@ -1,1 +1,3 @@
-@import '@repo/core/theme.css';
+@import '@repo/core/theme.native.css';
+@source "./node_modules/@repo/core/lib/**/*.{js}";
+@source "./node_modules/@repo/typography/lib/**/*.{js}";

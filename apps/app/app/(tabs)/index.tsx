@@ -2,10 +2,10 @@ import { HelloWave } from "@/components/hello-wave";
 import ParallaxScrollView from "@/components/parallax-scroll-view";
 import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
-import { multiply } from "@repo/typography";
+import { Typography } from "@repo/typography";
 import { Image } from "expo-image";
 import { Link } from "expo-router";
-import { Platform, StyleSheet, Text } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 
 export default function HomeScreen() {
   return (
@@ -84,9 +84,7 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView>
-        <Text className="text-destructive-foreground">
-          Uniwind test {multiply(3, 4)}
-        </Text>
+        <Typography variant="h1">Uniwind test</Typography>
       </ThemedView>
     </ParallaxScrollView>
   );

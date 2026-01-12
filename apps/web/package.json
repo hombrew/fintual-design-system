@@ -33,6 +33,7 @@
     "typescript": "catalog:workspace",
     "vite": "^7.1.7",
     "vite-plugin-cjs-interop": "^2.4.0",
+    "vite-plugin-rnw": "^0.0.10",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }

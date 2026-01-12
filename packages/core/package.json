@@ -13,7 +13,8 @@
     },
     "./package.json": "./package.json",
     "./theme.css": "./lib/styles/theme.css",
-    "./theme.native.css": "./lib/styles/theme.native.css"
+    "./theme.native.css": "./lib/styles/theme.native.css",
+    "./core.d.ts": "./lib/types/core.d.ts"
   },
   "files": [
     "src",
@@ -37,7 +38,7 @@
   "scripts": {
     "clean": "del-cli lib",
     "prepare": "pnpm run build",
-    "build": "bob build && mkdir ./lib/styles && pnpm run build:styles",
+    "build": "bob build && mkdir -p ./lib/styles && mkdir -p ./lib/types && pnpm run build:styles && cp -r ./src/types ./lib",
     "build:styles": "pnpm run \"/build:styles:/\"",
     "build:styles:web": "node --experimental-strip-types ./src/scripts/generate-theme.ts",
     "build:styles:native": "node --experimental-strip-types ./src/scripts/generate-theme.native.ts",
@@ -78,6 +79,7 @@
     "react-native": "catalog:react-native",
     "react-native-builder-bob": "^0.40.17",
     "release-it": "^19.0.4",
+    "tailwindcss": "catalog:design",
     "typescript": "catalog:workspace"
   },
   "peerDependencies": {

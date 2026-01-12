@@ -1,5 +1,4 @@
-import { View } from "@repo/core";
-import { multiply } from "@repo/typography";
+import { Typography } from "@repo/typography";
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 
@@ -22,7 +21,7 @@ export function Welcome() {
           </div>
         </header>
 
-        <View className="flex bg-amber-400">hiii {multiply(10, 2)}</View>
+        <Typography variant="h1">hiii</Typography>
 
         <div className="max-w-75 w-full space-y-6 px-4">
           <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">

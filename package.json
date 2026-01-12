@@ -33,7 +33,8 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "@expo/cli": "patches/@expo__cli.patch"
+      "@expo/cli": "patches/@expo__cli.patch",
+      "vite-plugin-rnw": "patches/vite-plugin-rnw.patch"
     },
     "onlyBuiltDependencies": [
       "esbuild",

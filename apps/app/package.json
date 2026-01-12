@@ -43,7 +43,7 @@
     "react-native-web": "~0.21.0",
     "react-native-worklets": "0.5.1",
     "tailwindcss": "catalog:design",
-    "uniwind": "^1.2.3"
+    "uniwind": "catalog:design"
   },
   "devDependencies": {
     "@types/react": "catalog:react",

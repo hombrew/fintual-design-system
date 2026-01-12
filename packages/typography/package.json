@@ -10,7 +10,8 @@
       "types": "./lib/typescript/src/index.d.ts",
       "default": "./lib/module/index.js"
     },
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./index.css": "./lib/styles/index.css"
   },
   "files": [
     "src",
@@ -63,6 +64,7 @@
     "@react-native/babel-preset": "0.83.0",
     "@react-native/eslint-config": "0.83.0",
     "@release-it/conventional-changelog": "^10.0.1",
+    "@repo/core": "workspace:*",
     "@types/react": "catalog:react",
     "del-cli": "^6.0.0",
     "eslint": "^8.1.0",
@@ -72,11 +74,14 @@
     "react-native": "catalog:react-native",
     "react-native-builder-bob": "^0.40.17",
     "release-it": "^19.0.4",
-    "typescript": "catalog:workspace"
+    "tailwindcss": "catalog:design",
+    "uniwind": "catalog:design"
   },
   "peerDependencies": {
+    "@repo/core": "*",
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "uniwind": "*"
   },
   "workspaces": [
     "example"
@@ -127,5 +132,9 @@
       "eslint"
     ],
     "version": "0.56.1"
+  },
+  "dependencies": {
+    "@rn-primitives/slot": "catalog:design",
+    "class-variance-authority": "catalog:design"
   }
 }

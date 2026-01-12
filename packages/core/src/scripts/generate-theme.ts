@@ -20,8 +20,6 @@ function generateTheme() {
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@source "../**/*.{ts,tsx}";
-
 @theme {
   --radius: 0.625rem;
   --radius-sm: calc(var(--radius) - 4px);
