@@ -441,9 +441,6 @@ importers:
       tailwindcss:
         specifier: catalog:design
         version: 4.1.18
-      typescript:
-        specifier: catalog:workspace
-        version: 5.9.2
       uniwind:
         specifier: catalog:design
         version: 1.2.3(react-native@0.81.5(@babel/core@7.28.5)(@types/react@19.1.17)(react@19.1.0))(react@19.1.0)(tailwindcss@4.1.18)
